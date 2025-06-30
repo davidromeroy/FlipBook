@@ -6,6 +6,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { SafariViewController } from '@ionic-native/safari-view-controller';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    InAppBrowser,
+    SafariViewController,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
